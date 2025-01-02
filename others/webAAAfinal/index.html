@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="媒体素材/favicon.ico" />
+
     <title>XiaomiHoYo</title>
-    <!-- 引入第三方组件库-->
+    <!-- 引入本地第三方组件库-->
     <link rel="stylesheet" href="ui/iceui/src/ui/ui.css"/>
     <script src="ui/iceui/src/ice.js"></script>
     <script src="ui/iceui/src/ui/ui.js"></script>
@@ -21,59 +22,13 @@
 		}
     </style>
     <!--导航栏-->
-    <style>
-     .TopbarMenu {
-            z-index: 99999;
-            background-color: rgba(0, 0, 0,0.4);
-            width: 100%;
-            gap:30px;
-            text-align: center;
-            justify-content: center;
-            display: flex;
-            position: fixed;
-            top: 0%;
-        }
-            .TopbarMenu img {
-                position: fixed;
-                left:13%;
-                margin-top: 20px;
-                height:30px;
-            }
-            .login {
-                color: #fff;
-                padding: 24px;
-                position: fixed;
-                right:13%;
-                height:30px;
-            }
-            .TopbarMenu a {
-                padding:24px;
-                font-family: Arial, Helvetica, sans-serif;
-                font-weight: 600;
-                font-size: 13px;
-                color:#fff;
-            }
-            .TopbarMenu a:hover {
-                color:rgb(255,103,0);
-            }
-            #active {
-                color:rgb(255,103,0);
-            }
-            .TopbarMenu input {
-                vertical-align: middle;
-                background-color: rgba(0, 0, 0, 0);
-                color: #fff;
-                border:none;
-                border-bottom: 1px solid #fff;
-                margin-top: 17px;
-            }
-    </style>
+    <link rel="stylesheet" href="stylesheet/topbar.css">
 	<!--footer-->
     <style>
 	.end{
 		margin: 0 auto;
 		width: 80%;
-		margin-top: 200px;
+		margin-top: 150px;
 		text-align: center;
 		display: grid;
 		justify-content: center;
@@ -106,7 +61,7 @@
     <div class="TopbarMenu">
         <img src="媒体素材/logo.png" alt="logo">
         <a href="#" id="active">小米哈游</a>
-        <a href="#">大果</a>
+        <a href="二级页面/phone.html">大果</a>
         <a href="#">关于</a>
         <a href="#">PhigrOS</a>
         <a href="#">凑数的</a>
@@ -133,15 +88,15 @@
         <div>
             <h1>选购指南</h1>
             <a href="#">手机</a></br>
-            <a href="#">机手</a></br>
             <a href="#">手机</a></br>
-            <a href="#">机手</a></br>
             <a href="#">手机</a></br>
-            <a href="#">机手</a></br>
             <a href="#">手机</a></br>
-            <a href="#">机手</a></br>
             <a href="#">手机</a></br>
-            <a href="#">机手</a></br>
+            <a href="#">手机</a></br>
+            <a href="#">手机</a></br>
+            <a href="#">手机</a></br>
+            <a href="#">手机</a></br>
+            <a href="#">手机</a></br>
         </div>
         <div>
             <h1>服务支持</h1>
@@ -156,12 +111,12 @@
         </div>
         <div>
             <h1>线下门店</h1>
-            <a href="#">传送锚点</a></br>
+            <a href="#">小米之家</a></br>
             <a href="#">服务网点</a></br>
             <a href="#">授权体验店/专区</a></br>
         </div>
         <div>
-            <h1>关于小米哈游</h1>
+            <h1>关于小米</h1>
             <a href="#">了解小米哈游</a></br>
             <a href="#">加入小米哈游</a></br>
             <a href="#">投资者关系</a></br>
@@ -178,8 +133,8 @@
         <div>
             <h2>114514</h2>
             <h3>25:00（仅收市话费）</h3>
-            <a href="#" class="btnn" id="btnnn">📞联系客服</a></br></br>
-            <h2>1145141919</h2>
+            <a href="#" class="btnn" id="btnnn">📞联系客服</a>
+            <h2>1145141919</h2></br>
             <h3>25:00（仅收市话费）</h3>
             <h3>适用于：智障婴儿</h3>
             <a href="#" class="btnn" id="btnn">📞联系客服</a>
