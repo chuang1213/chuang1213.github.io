@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../媒体素材/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大果手机</title>
+    <link rel="stylesheet" href="../ui/iceui/src/ui/ui.css"/>
+    <script src="../ui/iceui/src/ice.js"></script>
+    <script src="../ui/iceui/src/ui/ui.js"></script>
+
+    <link rel="../stylesheet" href="../ui/layui/css/layui.css"/>
+    <script src="../ui/layui/layui.js"></script>
+    <link rel="stylesheet" href="../stylesheet/animateIndex.css">
+    <link rel="stylesheet" href="../stylesheet/topbar.css">
+<style>
+    body {
+        background-color: #000;
+        color:#fff;
+		text-align: center;
+		align-items: center;
+    }
+    #logo {
+        margin-top:5px;
+        height: 30px;
+    }
+    .enter {
+        margin-top: 80px;
+        position: relative;
+        color: #fff;
+        font-size: 500%;
+        animation: BlurAnimation 1.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    .phone {
+        color:#fff;
+        position:relative;
+        animation: moveLeft 2s forwards; /* 应用移动动画，持续时间为2秒 */
+        animation-delay: 1.8s; /* 延迟与BlurAnimation的时间相同 */
+        opacity: 0;
+		font-weight: 900;
+    }
+    .scroll {
+            text-align: center;
+            margin:auto;
+            width: 100%;
+            align-items: center;
+
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+        }
+        .scroll img {
+            height:20px;
+            animation:moveupdown infinite 1.5s;
+        }
+		.ice-user {
+			text-align: right;
+			align-items: right;
+		}
+</style>
+
+</head>
+<body>
+    <div class="TopbarMenu">
+        <img src="../媒体素材/logo.png" alt="logo">
+        <a href="#">小米哈游</a>
+        <a href="#" id="active">大果</a>
+        <a href="#">关于</a>
+        <a href="#">PhigrOS</a>
+        <a href="#">凑数的</a>
+        <input type="text" placeholder="搜索产品...">
+        <div class="login">
+            <a href="#">登录</a> |
+            <a href="#">注册</a>
+        </div>
+    </div>
+    <div class="container">
+    <div class="enter">
+        <h1>强而有力的革命性产品。</h1>
+    </div>
+    <img src="../媒体素材/phone.png" class="phone" alt="phoene">
+    <h1 class="phone">HoyoPhone 16 Pro</h1></br>
+    <button type="button" class="btn btn-radius"><span>或者购买<i></i></span></button>
+    <button type="button" class="btn btn-radius"><span>立即购买<i></i></span></button></br>
+	<p>*如果您的余额不足，我们将为您提供免息贷款</p>
+    <div class="scroll">
+        <img src="../媒体素材/arrow.png" alt="arrow">
+        <footer>向下滚动以获取更多信息</footer>
+    </div>
+</div>
+</body>
+</html>
