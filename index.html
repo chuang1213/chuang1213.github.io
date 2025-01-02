@@ -1,64 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
-    <title>你好</title>
-    <style type="text/css">
-        body{
-            font:"Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
-            background-color: #E9F1FF;
-        }
-        a {
-            color: #051227;
-            text-decoration: none;
-        }
-        .topbar {
-            font-size: 18pt;
-            text-decoration: none; 
-            font-size: 20pt;
-            /*字体设置*/
-            background-color: #90BBFF;
-            color: #051227;
-            /*背景颜色*/
-            position:fixed;
-            top:0;
-            margin:auto;
-            text-align:center;
-            z-index: 5%;
-            width:100%;
-            /*设置宽度*/
-        }
-        #btn {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="媒体素材/favicon.ico" />
 
-        .container {
-            font-size: 20pt;
-            text-decoration: none; 
-            color:#051227;
+    <title>XiaomiHoYo</title>
+    <!-- 引入本地第三方组件库-->
+    <link rel="stylesheet" href="ui/iceui/src/ui/ui.css"/>
+    <script src="ui/iceui/src/ice.js"></script>
+    <script src="ui/iceui/src/ui/ui.js"></script>
 
-            padding-top:15%;
-            margin:auto;
-            width:80%;
-            text-align:center;
+    <link rel="stylesheet" href="ui/layui/css/layui.css"/>
+    <script src="ui/layui/layui.js"></script>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
         }
-        h1 {
-            color: #051227;
-            font-size: 55pt;
-        }
+		footer{			
+			text-align: center;
+		}
+    </style>
+    <!--导航栏-->
+    <link rel="stylesheet" href="stylesheet/topbar.css">
+	<!--footer-->
+    <style>
+	.end{
+		margin: 0 auto;
+		width: 80%;
+		margin-top: 150px;
+		text-align: center;
+		display: grid;
+		justify-content: center;
+		gap: 19px;
+		grid-template-columns: repeat(6, 12%);
+		line-height: 38px;
+	}
+	.end a:hover {
+		color: rgb(255,103,0);
+	}
+	.btnn {
+		padding: 10px 20px;
+		border:solid 1px rgb(255,103,0);
+	}
+	.btnn:hover {
+		background-color: rgb(255,103,0);
+		color: #fff;
+	}
+	#btnnn:hover {
+		background-color: rgb(255,103,0);
+		color: #fff;
+	}
+
+	#btnn:hover{
+		color: #fff;
+	}
     </style>
 </head>
 <body>
-    <div class="topbar">
-        <a href="#" id="btn">Home</a>
-        <a href="pages/abt.html" id="btn">About</a>
-        <a href="pages/b.html" id="btn">blog</a>
-        <a href="pages/src.html" id="btn">Resources</a>
+    <div class="TopbarMenu">
+        <img src="媒体素材/logo.png" alt="logo">
+        <a href="#" id="active">小米哈游</a>
+        <a href="二级页面/phone.html">大果</a>
+        <a href="#">关于</a>
+        <a href="#">PhigrOS</a>
+        <a href="#">凑数的</a>
+        <input type="text" placeholder="搜索产品...">
+        <div class="login">
+            <a href="#">登录</a> |
+            <a href="#">注册</a>
+        </div>
     </div>
     <div class="container">
-        <h1>坐和放宽</h1>
-        <p id="sup">chuang1227's site</p>
+        <div class="slider" data-slider-ani="fade">
+            <div class="slider" data-slider-time="10000"></div>
+            <div class="slider-box">
+                <div class="slider-list">
+                    <div class="slider-item active"><img src="媒体素材//banners/1.jpg" alt="1"></div>
+                    <div class="slider-item"><img src="媒体素材//banners/2.jpg" alt=""></div>
+                    <div class="slider-item"><img src="媒体素材//banners/3.jpg" alt=""></div>
+                    <div class="slider-item"><img src="媒体素材//banners/4.jpg" alt=""></div>
+                </div>
+            </div>
+        <div class="slider-prev"></div><div class="slider-next"></div><div class="slider-button"></div></div>
     </div>
+    <div class="end">
+        <div>
+            <h1>选购指南</h1>
+            <a href="#">手机</a></br>
+            <a href="#">手机</a></br>
+            <a href="#">手机</a></br>
+            <a href="#">手机</a></br>
+            <a href="#">手机</a></br>
+            <a href="#">手机</a></br>
+            <a href="#">手机</a></br>
+            <a href="#">手机</a></br>
+            <a href="#">手机</a></br>
+            <a href="#">手机</a></br>
+        </div>
+        <div>
+            <h1>服务支持</h1>
+            <a href="#">申请售后</a></br>
+            <a href="#">售后政策</a></br>
+            <a href="#">维修服务价格</a></br>
+            <a href="#">订单查询</a></br>
+            <a href="#">以旧换新</a></br>
+            <a href="#">保障服务</a></br>
+            <a href="#">防伪查询</a></br>
+            <a href="#">F码通道</a></br>
+        </div>
+        <div>
+            <h1>线下门店</h1>
+            <a href="#">小米之家</a></br>
+            <a href="#">服务网点</a></br>
+            <a href="#">授权体验店/专区</a></br>
+        </div>
+        <div>
+            <h1>关于小米</h1>
+            <a href="#">了解小米哈游</a></br>
+            <a href="#">加入小米哈游</a></br>
+            <a href="#">投资者关系</a></br>
+            <a href="#">可持续发展</a></br>
+            <a href="#">廉洁举报</a></br>
+        </div>
+        <div>
+            <h1>关注我们</h1>
+            <a href="#">新浪微博</a></br>
+            <a href="#">官方微信</a></br>
+            <a href="#">联系我们</a></br>
+            <a href="#">公益基金会</a></br>
+        </div>
+        <div>
+            <h2>114514</h2>
+            <h3>25:00（仅收市话费）</h3>
+            <a href="#" class="btnn" id="btnnn">📞联系客服</a>
+            <h2>1145141919</h2></br>
+            <h3>25:00（仅收市话费）</h3>
+            <h3>适用于：智障婴儿</h3>
+            <a href="#" class="btnn" id="btnn">📞联系客服</a>
+        </div>
+    </div>
+    <footer class="footer">
+        © 2077 荒坂集团
+    </footer>
 </body>
 </html>
